@@ -7,8 +7,8 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
     alt="${o.description}"
     />
  </a>
-  </li>`}function r(o){return o.map(c).join("")}function s(){const o=r(n);e.innerHTML=o}s();e.addEventListener("click",o=>{if(o.preventDefault(),o.target===o.currentTarget)return;const p=o.target.dataset.source,i=basicLightbox.create(`<div class="modal">
-     <img src="${p}" width="1112" height="640">
+  </li>`}function r(o){return o.map(c).join("")}function s(){const o=r(n);e.innerHTML=o}s();e.addEventListener("click",o=>{if(o.preventDefault(),o.target===o.currentTarget)return;const p=o.target.dataset.source,t=basicLightbox.create(`<div class="modal">
+     <img class="modal-gallery-image" src="${p}" width="1112" height="640">
 </div>
-`,{onShow:t=>{window.addEventListener("keydown",a)},onClose:t=>{window.removeEventListener("keydown",a)}});function a(t){t.code==="Escape"&&i.close()}i.show()});
+`,{onShow:i=>{window.addEventListener("keydown",a)},onClose:i=>{window.removeEventListener("keydown",a)}});function a(i){i.code==="Escape"&&t.close()}t.show()});
 //# sourceMappingURL=commonHelpers.js.map
