@@ -58,3 +58,7 @@ p {
   align-items: center;
   flex-shrink: 0;
 }
+.modal-gallery-image {
+  width: 1112px;
+  height: 640px;
+}

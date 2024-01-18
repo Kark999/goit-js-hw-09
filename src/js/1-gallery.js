@@ -96,7 +96,7 @@ container.addEventListener('click', e => {
 
   const instance = basicLightbox.create(
     `<div class="modal">
-     <img src="${source}" width="1112" height="640">
+     <img class="modal-gallery-image" src="${source}" width="1112" height="640">
 </div>
 `,
     {
