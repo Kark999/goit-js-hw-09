@@ -21,7 +21,24 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.agenda {
+  display: flex;
+  width: 300px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: rgb(83, 189, 195);
+}
+.list {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
 .gallery {
   display: flex;
   width: 1440px;
