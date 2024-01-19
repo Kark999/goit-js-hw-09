@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -68,15 +71,11 @@ const container = document.querySelector('.gallery');
 
 function imageTemplate(image) {
   return `<li class="gallery-item">
- <a class="gallery-link" href="${image.original}">
-  <img
-    class="gallery-image"
-    src="${image.preview}"
-    data-source="${image.original}"
-    alt="${image.description}"
-    />
- </a>
-  </li>`;
+  <a class="gallery-link" href="${image.original}">
+    <img class="gallery-image" src="${image.preview}" alt="${image.description}" />
+  </a>
+</li>
+  `;
 }
 
 function galleryTemplate(images) {
@@ -89,30 +88,13 @@ function render() {
 }
 render();
 
-container.addEventListener('click', e => {
-  e.preventDefault();
-  if (e.target === e.currentTarget) return;
-  const source = e.target.dataset.source;
-
-  const instance = basicLightbox.create(
-    `<div class="modal">
-     <img class="modal-gallery-image" src="${source}" width="1112" height="640">
-</div>
-`,
-    {
-      onShow: instance => {
-        window.addEventListener('keydown', onModalClose);
-      },
-
-      onClose: instance => {
-        window.removeEventListener('keydown', onModalClose);
-      },
-    }
-  );
-
-  function onModalClose(e) {
-    if (e.code === 'Escape') instance.close();
-  }
-
-  instance.show();
+let gallery = new SimpleLightbox('.gallery a', {
+  className: 'modal',
+  captions: true,
+  captionSelector: 'img',
+  captionType: 'attr',
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+  enableKeyboard: true,
 });
