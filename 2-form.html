@@ -13,12 +13,32 @@
     <title>2-form</title>
 
     
-    <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-09/assets/styles-92f12249.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="stylesheet" href="/goit-js-hw-09/assets/styles-f31bc5d4.css">
   </head>
 
   <body>
     <p><a href="index.html">Go back</a></p>
+
+    <form class="submit-form">
+      <label class="label-field">
+        Email
+        <input
+          class="input-field-mail"
+          type="email"
+          name="email"
+          placeholder="Type area"
+        />
+      </label>
+
+      <label label class="label-field">
+        Message
+        <input class="input-field-message" type="message" name="message" />
+      </label>
+
+      <button class="form-btn" type="submit">Submit</button>
+    </form>
 
     
   </body>
