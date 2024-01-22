@@ -28,8 +28,7 @@ form.addEventListener('submit', function (e) {
     console.log(formData);
 
     localStorage.removeItem('feedback-form-state');
-    emailInput.value = '';
-    messageInput.value = '';
+    form.reset();
   } else {
     alert('Please fill in both form fields');
   }
