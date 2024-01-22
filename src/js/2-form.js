@@ -4,12 +4,12 @@ form.addEventListener('input', function (e) {
   const target = e.target;
 
   if (target.type === 'email' || target.type === 'textarea') {
-    const formData = {
+    const formDataToLS = {
       email: form.elements['email'].value.trim(),
       message: form.elements['message'].value.trim(),
     };
 
-    localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+    localStorage.setItem('feedback-form-state', JSON.stringify(formDataToLS));
   }
 });
 
