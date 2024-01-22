@@ -89,12 +89,6 @@ function render() {
 render();
 
 let gallery = new SimpleLightbox('.gallery a', {
-  className: 'modal',
-  captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
   captionsData: 'alt',
-  captionPosition: 'bottom',
   captionDelay: 250,
-  enableKeyboard: true,
 });
