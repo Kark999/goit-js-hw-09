@@ -76,7 +76,7 @@ p {
   width: 1112px;
   height: 640px;
 }
-.submit-form {
+.feedback-form {
   width: 408px;
   min-height: 296px;
   display: flex;
@@ -135,7 +135,7 @@ p {
   padding: 8px 16px;
 }
 
-.input-field-message {
+.textarea-field-message {
   display: flex;
   width: 360px;
   height: 80px;

@@ -18,7 +18,7 @@
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <form class="submit-form">
+    <form class="feedback-form" autocomplete="off">
       <label class="label-field">
         Email
         <input
@@ -26,14 +26,18 @@
           type="email"
           name="email"
           placeholder="Type area"
+          autofocus
         />
       </label>
-
-      <label label class="label-field">
+      <label class="label-field">
         Message
-        <input class="input-field-message" type="message" name="message" />
+        <textarea
+          class="textarea-field-message"
+          name="message"
+          type="textarea"
+          rows="8"
+        ></textarea>
       </label>
-
       <button class="form-btn" type="submit">Submit</button>
     </form>
 
