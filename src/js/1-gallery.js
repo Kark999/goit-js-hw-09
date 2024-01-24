@@ -81,12 +81,8 @@ function imageTemplate(image) {
 function galleryTemplate(images) {
   return images.map(imageTemplate).join('');
 }
-
-function render() {
-  const markup = galleryTemplate(images);
-  container.innerHTML = markup;
-}
-render();
+const markup = galleryTemplate(images);
+container.innerHTML = markup;
 
 let gallery = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',

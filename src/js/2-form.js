@@ -1,5 +1,13 @@
 const form = document.querySelector('.feedback-form');
 
+window.addEventListener('load', function () {
+  const formDataFromLS =
+    JSON.parse(localStorage.getItem('feedback-form-state')) || {};
+
+  form.elements['email'].value = formDataFromLS.email || '';
+  form.elements['message'].value = formDataFromLS.message || '';
+});
+
 form.addEventListener('input', function (e) {
   const target = e.target;
 
