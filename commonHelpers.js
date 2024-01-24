@@ -3,5 +3,5 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                
     <img class="gallery-image" src="${p.preview}" alt="${p.description}" />
   </a>
 </li>
-  `}function e(p){return p.map(t).join("")}function n(){const p=e(i);a.innerHTML=p}n();new o(".gallery a",{captionsData:"alt",captionDelay:250});
+  `}function e(p){return p.map(t).join("")}const n=e(i);a.innerHTML=n;new o(".gallery a",{captionsData:"alt",captionDelay:250});
 //# sourceMappingURL=commonHelpers.js.map
